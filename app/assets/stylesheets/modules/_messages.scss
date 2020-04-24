@@ -41,7 +41,7 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 0 20px;
-    .group {
+    &__group {
       padding: 20px 0 40px;
       &--name {
         font-size: 15px;
@@ -66,7 +66,7 @@
       display: flex;
       justify-content: space-between;
       padding: 0 40px;
-      .group {
+      &__group {
         padding-top: 35px;
         &__name {
           color: #333333;
@@ -97,7 +97,7 @@
     padding: 35px 40px 0;
     &__message {
       padding-bottom: 46px;
-      .message-info {
+      &__info {
         display: flex;
         justify-content: start;
         margin-bottom: 12px;
@@ -112,7 +112,7 @@
           font-size: 12px;
         }
       }
-      .message-detail {
+      &__detail {
         color: #434a54;
         font-size: 14px;
       }
@@ -126,7 +126,7 @@
       display: flex;
       justify-content: space-between;
       height: 50px;
-      .message-type {
+      &__message-type {
         background-color: #FFFFFF;
         position: relative;
         width: 100%;
@@ -135,11 +135,11 @@
           line-height: 50px;
           width: 100%;
         }
-        &--image{
+        &__image{
           input{
             display: none;
           }
-          .image-icon {
+          &--icon {
             font-size: 25px;
             line-height: 50px;
             position: absolute;
@@ -148,7 +148,7 @@
           }
         }
       }
-      .send-btn {
+      &__send-btn {
         margin-left: 15px;
         padding: 0 30px;
         background-color: #38aef0;
@@ -160,5 +160,4 @@
       }
     }
   }
-
 }
