@@ -1,35 +1,35 @@
 .chat-main
-  .group-top
-    .group-info
+  .chat-main__group-top
+    .chat-main__group-top__info
       .group
-        .group-name
+        .group__name
           test
-        .group-member
+        .group__member
           Member : masa
-      = link_to "#", class: "group-info__edit-btn" do
+      = link_to "#", class: "chat-main__group-top__info--edit-btn" do
         Edit
-  .message-list
-    .message
+  .chat-main__message-list
+    .chat-main__message-list__message
       .message-info
-        .member-name
+        .message-info__member-name
           masa
-        .message-time
+        .message-info__message-time
           2020年04月20日 16時53分
       .message-detail
         hello!
-    .message
+    .chat-main__message-list__message
       .message-info
-        .member-name
-          天才
-        .message-time
-          2020年04月20日 16時56分
+        .message-info__member-name
+          ドンマイ
+        .message-info__message-time
+          2020年04月20日 16時55分
       .message-detail
-        さすがすぎ
-  .message-form
-    = form_with(local: true, class: "form") do |f|
+        ドンマイ
+  .chat-main__message-form
+    = form_with(local: true, class: "chat-main__message-form__form") do |f|
       .message-type
-        = f.text_field :text, class: "form-text", placeholder: "type a message"
-        = f.label :image, class: "form-image" do
+        = f.text_field :text, class: "message-type--text", placeholder: "type a message"
+        = f.label :image, class: "message-type--image" do
           = icon('far', 'image', class: "image-icon")
           = f.file_field :image
       = f.submit "SEND", class: "send-btn"
