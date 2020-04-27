@@ -1,0 +1,22 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__user-name__top-items
+      .side-bar__user-name__top-items--name
+        masa
+      .side-bar__user-name__top-items--icon-list
+        = link_to "#", class: "side-bar__user-name__top-items--icon-list__icon--edit" do
+          = icon('far', 'edit', class: "side-bar__user-name__top-items--icon-list__icon")
+        = link_to "#", class: "side-bar__user-name__top-items--icon-list__icon--cog" do
+          = icon('fas', 'cog', class: "side-bar__user-name__top-items--icon-list__icon")
+  .side-bar__group-list
+    .side-bar__group-list__group
+      .side-bar__group-list__group--name
+        最強
+      .side-bar__group-list__group--message
+        まだメッセージはありません
+    .side-bar__group-list__group
+      .side-bar__group-list__group--name
+        余裕
+      .side-bar__group-list__group--message
+        まだメッセージはありません
+
