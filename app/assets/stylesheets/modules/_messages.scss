@@ -43,12 +43,16 @@
     padding: 0 20px;
     &__group {
       padding: 20px 0 40px;
+      text-decoration: none;
+      display: block;
       &--name {
         font-size: 15px;
+        color: white;
       }
       &--message {
         font-size: 11px;
         margin-top: 5px;
+        color: white;
       }
     }
   }
@@ -76,6 +80,11 @@
           color: #999999;
           font-size: 12px;
           margin-top: 15px;
+          display: flex;
+          &--name {
+            padding-left: 10px;
+            justify-content: start;
+          }
         }
       }
       &--edit-btn {
